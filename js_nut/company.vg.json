@@ -1,0 +1,101 @@
+
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"background": "#f3f4d1",
+"width": 750,
+"height": 400,
+"data": {
+  "url": "js_nut/company - Sheet1.csv"
+},
+"layer":[{
+"mark": {"type": "line"},
+  "encoding": {
+    "x": {"field": "Year"},
+    "y": {"field": "Revenue", "type": "quantitative"},
+    "color":{"field":"Company","type": "nominal","scale": {
+      "domain": ["Subway","McDonald's","Wendy's","Shake Shack","Starbucks","Chipotle Mexican Grill"],
+      "range": ["#023020","#bebebe","#bebebe","#bebebe","#bebebe","#bebebe"]
+    }},
+    "tooltip": [{"field": "Company", "title": "Company","type": "nominal"}, 
+    {"field": "Revenue", "title": "Revenue","type": "quantitative"},
+    {"field":"Year","title":"Year","type": "ordinal"}]
+  }},
+  {
+    "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "color":"black",
+        "dy":-5,
+        "dx": 5
+    },
+    "transform": [{"filter": {"field": "Year", "equal": "2022"}}],
+    "encoding": {
+      "x": {"field": "Year","axis":{"labelAngle":0,"labelOffset":10}},
+      "y": {"field": "Revenue", "type": "quantitative"},
+      "text": {"field": "Company", "type": "nominal"},
+      "color":{"value":"#808080"}
+
+    }
+  },
+  {
+    "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "line-top",
+        "color":"black",
+        "dy":-15,
+        "style": ["italic"],
+        "fill": "chocolate"
+        
+    },
+    "transform": [{"filter": {"field": "Year", "equal":2020}}],
+    "encoding": {
+
+        "x": {"value":500}, 
+        "y": {"value":250},
+
+        "text": { "value": "2020 saw a slight income loss for Subway,  "}
+    }
+    },
+    {
+      "mark": {
+          "type": "text",
+          "align": "center",
+          "baseline": "line-top",
+          "color":"black",
+          "dy":-15,
+          "style": ["italic"],
+          "fill": "chocolate"
+          
+      },
+      "transform": [{"filter": {"field": "Year", "equal":2020}}],
+      "encoding": {
+  
+          "x": {"value":500}, 
+          "y": {"value":260},
+  
+          "text": { "value": "most likely as a result of the pandemic's difficulties,"}
+      }
+      },
+      {
+        "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "line-top",
+            "color":"black",
+            "dy":-15,
+            "style": ["italic"],
+            "fill": "chocolate"
+            
+        },
+        "transform": [{"filter": {"field": "Year", "equal":2020}}],
+        "encoding": {
+    
+            "x": {"value":500}, 
+            "y": {"value":270},
+    
+            "text": { "value": "which included temporary store closures and altered consumer behaviour."}
+        }
+        }],
+  "config": {"legend": {"disable":true}}
+}

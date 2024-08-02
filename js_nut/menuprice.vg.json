@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f3f4d1",
+    "width": 350,
+    "height": 350,
+    "params": [
+        {"name": "Category_selection",
+        "bind": {
+        "input": "select",
+        "options": [
+          "Box Plot","Scatter Plot"
+        ],
+        "name": "Selection: "
+        }
+        }
+      ],
+    "layer":[
+        {   
+            "data": {
+                "url": "js_nut/SubwayMenuPrice.csv"
+            },
+            "transform": [{"filter":"Category_selection != 'Scatter Plot' "}],
+            "mark": {
+            "type": "boxplot",
+            "extent": "min-max"
+            },
+            "encoding": {
+            "x": {"field": "Size", "type": "nominal","axis":{"labelAngle":0}},
+            "y": {"field": "Price",
+                "type": "quantitative",
+                "scale": {"zero": false}
+            },
+            "color": {"value":"#023020"}
+            }
+        },
+        {   "data": {
+            "url": "js_nut/SubwayMenuPrice.csv"
+            },
+
+            "transform": [{"filter":"Category_selection == 'Scatter Plot'"}],
+            "mark": {
+                "type": "circle",
+                "color": "#023020",
+                "opacity":{"expr": "10"},
+                "size":{"expr": "9"}
+            },
+            "encoding": {
+                "x": {
+                    "field": "Size", "type": "nominal","axis": {"title": "Category"}},
+                "y": {
+                    "field": "Price",
+                    "type": "quantitative"
+                },
+                "tooltip": [{"field": "Food", "title": "Food"},{"field": "Size", "title": "Size"},
+                {"field": "Price", "title": "Price"}]
+        }
+        }
+    
+    ],
+    "config": {
+        "view": {"stroke": "transparent"},
+        "padding": 10,
+        "legend": {"orient": "top"}
+      
+  }
+}
+  
