@@ -1,0 +1,81 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background": "#f3f4d1",
+    "width": 350,
+    "height": 350,
+    "data": {
+      "url": "js_nut/SubwayMenuNutrition.csv"
+    },
+    "transform": [
+      { 
+        "filter":"datum.Category != 'Bread & Toppings'"},
+      {
+        "aggregate": [
+          {"op": "count", "as": "count"}
+        ],
+        "groupby": ["Category"]
+
+      }
+
+    ],
+    "layer": [{"mark": "circle",
+    "encoding": {
+      "x": {"field": "Category", "type": "nominal","sort":"-y"}, 
+      "y": {"field": "count", "type": "quantitative"},
+      "tooltip": [{"field": "Category", "title": "Category"}, {"field": "count", "title": "Count"}],
+      "size":{"value":90},
+      "fillOpacity":{"value":15},
+      "color": {
+      
+        "field": "Category",
+        "type": "nominal",
+        "legend":null,
+        "scale": {
+            "domain": [
+            "Breakfast",
+            "Sandwiches",
+            "Wraps",
+            "Bowls",
+            "Salads",
+            "Panini",
+            "Bread & Toppings",
+            "Drinks",
+            "Extras"
+            ],
+            "range": [
+              "#023020"
+            ]
+        }
+        }
+    }},
+    {"mark": "bar",
+    "encoding": {
+      "x": {"field": "Category", "type": "nominal","sort":"-y"}, 
+      "y": {"field": "count", "type": "quantitative"},
+      "tooltip": [{"field": "Category", "title": "Category"}, {"field": "count", "title": "Count"}],
+      "size":{"value":5},
+      "color": {
+        "field": "Category",
+        "type": "nominal",
+        "legend":null,
+        "scale": {
+            "domain": [
+            "Breakfast",
+            "Sandwiches",
+            "Wraps",
+            "Bowls",
+            "Salads",
+            "Panini",
+            "Bread & Toppings",
+            "Drinks",
+            "Extras"
+            ],
+            "range": [
+              "#023020"
+            ]
+        }
+        }
+    }}
+    ]
+    
+  }

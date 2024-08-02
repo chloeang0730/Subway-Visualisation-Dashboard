@@ -1,0 +1,360 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "background":"#f3f4d1",
+
+    "data": {
+    "url": "js_nut/SubwayMenuNutrition.csv"},
+    "transform": [{"filter": "Category_selection == null || datum.Category == Category_selection"}],
+    "params": [
+        {
+        "name": "Category_selection",
+        "bind": {
+        "input": "select",
+        "options": [
+            null,
+            "Sandwiches",
+            "Wraps",
+            "Bowls",
+            "Salads",
+            "Panini",
+            "Bread & Toppings",
+            "Drinks"
+        ],
+            "labels":[
+            "Show All",
+            "Sandwiches",
+            "Wraps",
+            "Bowls",
+            "Salads",
+            "Panini",
+            "Bread & Toppings",
+            "Drinks",
+            "Extras"
+        ],
+        "name": "Selection: "
+
+        }
+
+        }
+    ],
+    "vconcat":[
+    {"hconcat":[ {
+    "mark": "circle",
+    "encoding": {
+        "x": {
+        "field": "Weight Watchers Pnts",
+        "type": "quantitative",
+        "title": "Weight Watchers Point"
+      
+        },
+        "y": {
+        "field": "Total Fat (g)",
+        "type": "quantitative",
+        "title": "Total Fat (g)"
+        },
+        "color": {
+            "field": "Category",
+            "type": "nominal",
+            "scale": {
+                "domain": [
+                "Sandwiches",
+                "Wraps",
+                "Bowls",
+                "Salads",
+                "Panini",
+                "Bread & Toppings",
+                "Drinks"
+                ],
+                "range": [
+                    "#E69F00",
+                    "#009E73",
+                    "#56B4E9",
+                    "#F0E442",
+                    "#0072B2",
+                    "#D55E00",
+                    "#CC79A7",
+                    "#D0CCCC"
+                ]
+            }
+            },
+            "size": {
+                
+                "field": "Calories",
+                "type": "quantitative"
+            },
+            "tooltip": [
+                {"field": "Category", "type": "nominal"},
+                {"field": "Item", "type": "nominal"},
+                {"field": "Calories", "type": "quantitative", "format": ","},
+                {"field": "Weight Watchers Pnts", "type": "quantitative", "format": ","}
+                ]
+            
+        }
+    },
+    {
+        "mark": "circle",
+        "encoding": {
+            "x": {
+            "field": "Weight Watchers Pnts",
+            "type": "quantitative",
+            "title": "Weight Watchers Point"
+          
+            },
+            "y": {
+            "field": "Trans Fat (g)",
+            "type": "quantitative",
+            "title": "Trans Fat (g)"
+            },
+            "color": {
+                "field": "Category",
+                "type": "nominal",
+                "scale": {
+                    "domain": [
+                    "Sandwiches",
+                    "Wraps",
+                    "Bowls",
+                    "Salads",
+                    "Panini",
+                    "Bread & Toppings",
+                    "Drinks"
+                    ],
+                    "range": [
+                        "#8c510a",
+                        "#bf812d",
+                        "#dfc27d",
+                        "#f6e8c3",
+                        "#f5f5f6",
+                        "#c7eae5",
+                        "#80cdc1",
+                        "#35978f"
+                    ]
+                }
+                },
+                "size": {
+                    "field": "Calories",
+                    "type": "quantitative"
+                },
+                "tooltip": [
+                    {"field": "Category", "type": "nominal"},
+                    {"field": "Item", "type": "nominal"},
+                    {"field": "Calories", "type": "quantitative", "format": ","},
+                    {"field": "Weight Watchers Pnts", "type": "quantitative", "format": ","}
+                    ]
+        }
+    },{
+        "mark": "circle",
+        "encoding": {
+            "x": {
+            "field": "Weight Watchers Pnts",
+            "type": "quantitative",
+            "title": "Weight Watchers Point"
+          
+            },
+            "y": {
+            "field": "Cholesterol (mg)",
+            "type": "quantitative",
+            "title": "Cholesterol (mg)"
+            },
+            "color": {
+                "field": "Category",
+                "type": "nominal",
+                "scale": {
+                    "domain": [
+                    "Sandwiches",
+                    "Wraps",
+                    "Bowls",
+                    "Salads",
+                    "Panini",
+                    "Bread & Toppings",
+                    "Drinks"
+                    ],
+                    "range": [
+                        "#8c510a",
+                        "#bf812d",
+                        "#dfc27d",
+                        "#f6e8c3",
+                        "#f5f5f6",
+                        "#c7eae5",
+                        "#80cdc1",
+                        "#35978f"
+                    ]
+                }
+                },
+                "size": {
+                    "field": "Calories",
+                    "type": "quantitative"
+                },
+                "tooltip": [
+                    {"field": "Category", "type": "nominal"},
+                    {"field": "Item", "type": "nominal"},
+                    {"field": "Calories", "type": "quantitative", "format": ","},
+                    {"field": "Weight Watchers Pnts", "type": "quantitative", "format": ","}
+                    ]
+        }
+    }
+    ]
+    },
+    {
+        "hconcat":[{
+            "mark": "circle",
+            "encoding": {
+                "x": {
+                "field": "Weight Watchers Pnts",
+                "type": "quantitative",
+                "title": "Weight Watchers Point"
+              
+                },
+                "y": {
+                "field": "Sugars (g)",
+                "type": "quantitative",
+                "title": "Sugars (g)"
+                },
+                "color": {
+                    "field": "Category",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                        "Breakfast",
+                        "Sandwiches",
+                        "Wraps",
+                        "Bowls",
+                        "Salads",
+                        "Panini",
+                        "Bread & Toppings",
+                        "Drinks"
+                        ],
+                        "range": [
+                            "#8c510a",
+              "#bf812d",
+              "#dfc27d",
+              "#f6e8c3",
+              "#f5f5f6",
+              "#c7eae5",
+              "#80cdc1",
+              "#35978f"
+                        ]
+                    }
+                    },
+                    "size": {
+                        "field": "Calories",
+                        "type": "quantitative"
+                    },
+                    "tooltip": [
+                        {"field": "Category", "type": "nominal"},
+                        {"field": "Item", "type": "nominal"},
+                        {"field": "Calories", "type": "quantitative", "format": ","},
+                        {"field": "Weight Watchers Pnts", "type": "quantitative", "format": ","}
+                        ]
+            }
+            },
+        
+            {
+                "mark": "circle",
+                "encoding": {
+                    "x": {
+                    "field": "Weight Watchers Pnts",
+                    "type": "quantitative",
+                    "title": "Weight Watchers Point"
+                  
+                    },
+                    "y": {
+                    "field": "Carbs (g)",
+                    "type": "quantitative",
+                    "title": "Carbs (g)"
+                    },
+                    "color": {
+                        "field": "Category",
+                        "type": "nominal",
+                        "scale": {
+                            "domain": [
+                            "Sandwiches",
+                            "Wraps",
+                            "Bowls",
+                            "Salads",
+                            "Panini",
+                            "Bread & Toppings",
+                            "Drinks"
+                            ],
+                            "range": [
+                                "#8c510a",
+                                "#bf812d",
+                                "#dfc27d",
+                                "#f6e8c3",
+                                "#f5f5f6",
+                                "#c7eae5",
+                                "#80cdc1",
+                                "#35978f"
+                            ]
+                        }
+                        },
+                        "size": {
+                            "field": "Calories",
+                            "type": "quantitative"
+                        },
+                        "tooltip": [
+                            {"field": "Category", "type": "nominal"},
+                            {"field": "Item", "type": "nominal"},
+                            {"field": "Calories", "type": "quantitative", "format": ","},
+                            {"field": "Weight Watchers Pnts", "type": "quantitative", "format": ","}
+                            ]
+                }
+            } ,
+            {
+                "mark": "circle",
+                "encoding": {
+                    "x": {
+                    "field": "Weight Watchers Pnts",
+                    "type": "quantitative",
+                    "title": "Weight Watchers Point"
+                  
+                    },
+                    "y": {
+                    "field": "Dietary Fiber (g)",
+                    "type": "quantitative",
+                    "title": "Dietary Fiber (g)"
+                    },
+                    "color": {
+                        "field": "Category",
+                        "type": "nominal",
+                        "scale": {
+                            "domain": [
+                            "Sandwiches",
+                            "Wraps",
+                            "Bowls",
+                            "Salads",
+                            "Panini",
+                            "Bread & Toppings",
+                            "Drinks"
+                            ],
+                            "range": [
+                                "#8c510a",
+                                "#bf812d",
+                                "#dfc27d",
+                                "#f6e8c3",
+                                "#f5f5f6",
+                                "#c7eae5",
+                                "#80cdc1",
+                                "#35978f"
+                            ]
+                        }
+                        },
+                        "size": {
+                            "field": "Calories",
+                            "type": "quantitative"
+                        },
+                        "tooltip": [
+                            {"field": "Category", "type": "nominal"},
+                            {"field": "Item", "type": "nominal"},
+                            {"field": "Calories", "type": "quantitative", "format": ","},
+                            {"field": "Weight Watchers Pnts", "type": "quantitative", "format": ","}
+                            ]
+                }
+            } 
+        ]
+    }
+] ,
+"config": {"legend": {"orient": "bottom","columns":4}}
+    
+    
+}
+

@@ -1,0 +1,314 @@
+html{
+    background: no-repeat center fixed;
+}
+body {
+    background-color: rgb(224, 247, 229);
+}
+h2{
+    color: #333333;
+    font-size: 30px;
+    font-family: 'Young Serif', serif;
+}
+
+.subway{
+    color:#007652;
+    font-weight: 700;
+}
+.location{
+    color:#f88604;
+
+}
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    background-color: #007652; /* Light grey section background */
+    padding: 20px; /* Consolidated padding shorthand */
+ }
+ /*title*/
+#i0{
+    display: flex;
+    justify-content: space-between; /* Spread elements apart */
+    background: fixed;
+    background-color: #f3f4d1;
+    border-radius: 25px
+}
+
+#img1 img {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 20vw;
+    height: 20vw;
+}
+#img2 img{ 
+    margin-top: 20px;
+    width: 100%
+}
+#img3 img{
+    margin-top: 40px;
+
+    height: 20vw;
+
+}
+
+.line1{
+    margin-top: 30px;
+    text-align: center;
+    color: #007652;
+    font-size: 100px;
+    font-family: 'Croissant One', cursive;
+    font-weight: 700;
+
+}  
+.line2{
+    text-align: center;
+    color: #f88604;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.line1,.line2{
+    display: block;/* Display each line as a block element */
+    line-height: 1; /* Set line-height to 1 to remove space between lines */
+  }
+
+#layer0 p{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align:  justify;
+    color:#333333;
+}
+#layer0 h2 {
+    margin-top: 1px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    color: #9BA4B4;
+    font-size: 60px;
+   
+}
+
+
+/* layer 1 */
+
+#i1 {
+    background-color: #f3f4d1; /* Background color for the "pure-g" with id "2" */
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 10px;
+    max-width: 3000px;
+    border-radius: 25px;
+    
+    max-height: fit-content;
+}
+#layer1 h2{
+    margin-top: 30px;
+}
+#subwaymap{
+    border:#f3f4d1 ;
+    
+}
+#layer1.pure-u-1-2 p {
+    text-align:  justify;
+    columns: 2;
+    line-height: 20px;
+    max-width: 550px;
+}
+
+.layer1_text p {
+    text-align:  justify;
+    columns: 2;
+ /* Create a nested grid for two columns of text */
+    grid-template-columns: 50% 50%; /* Two columns for the text */
+    max-width: 810px;
+    margin-left:7%;
+}
+#p1{
+    
+    text-align: justify;
+    columns: 2;
+    line-height: 20px;
+    color: #333333; /* Dark grey text for paragraphs */
+     
+}
+
+
+/* layer 2 : number of restaurant */
+#i2 {
+    background-color: #f3f4d1; /* Background color for the "pure-g" with id "2" */
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 10px;
+    max-width: 3000px;
+    border-radius: 25px;
+    max-height: fit-content;
+}
+#restaurants{
+    background-color: #f3f4d1;
+}
+
+#p2{
+    text-align: justify;
+    columns: 2;
+    line-height: 20px;
+    color: #333333; /* Dark grey text for paragraphs */
+     
+}
+
+
+
+/* layer 3: ranking */
+#i3 {
+    background-color: #f3f4d1; /* Background color for the "pure-g" with id "2" */
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 10px;
+    max-width: 3000px;
+    border-radius: 25px;
+    max-height: fit-content;
+}
+#company{  
+   
+}
+
+
+/* layer 4: category */
+#i4 {
+    background-color: #f3f4d1; /* Background color for the "pure-g" with id "2" */
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 10px;
+    max-width: 3000px;
+    border-radius: 25px;
+    max-height: fit-content;
+}
+#i4 h1{
+    margin-top: 30px;
+}
+#p4{
+    text-align: justify;
+    columns: 1;
+    line-height: 20px;
+    color: #333333; 
+
+}
+#p41{
+    text-align: justify;
+    columns: 1;
+    line-height: 20px;
+    color: #333333; 
+    margin-left: 5%;
+}
+#category{
+
+
+}
+/* layer 5: acsi */
+#p5{
+    text-align: justify;
+    columns: 1;
+    line-height: 20px;
+    color: #333333; 
+}
+/* layer 5: nutrients */
+#i5{
+    background-color: #f3f4d1; /* Background color for the "pure-g" with id "2" */
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-top: 10px;
+    max-width: 3000px;
+    border-radius: 25px;
+    max-height: fit-content;
+}
+#p5{
+    text-align: justify;
+    columns: 1;
+    line-height: 20px;
+    color: #333333; 
+}
+#p6{
+    text-align: justify;
+    columns: 2;
+    line-height: 20px;
+    color: #333333; 
+}
+.pure-u-1-2{
+
+}
+
+
+/* next * /
+
+.pure-u-1-3 img {
+    width: 50vw;
+    height: 30vw;
+}
+
+.pure-u-1-3 {
+    margin-top: 40px;
+    height: 30vw;
+}
+
+
+#text_div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*
+h2{
+    text-align: center;
+    color: #8b2323;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 100px;
+    font-family: 'Fondamento', cursive;
+}
+*/
+#map p{
+    color: #007652;
+    font-size: 16px;
+    text-align: center;
+    /*background-color: rgba(8, 54, 8, 0.3);*/
+    background-size: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+#ranking p{
+    color: #007652;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 300px;
+
+
+
+}
+
+#category p{
+    margin-left: 300px;
+    color: #007652;
+    font-size: 16px;
+    text-align: left;
+    
+}
+#nutrients p{
+    color: #007652;
+    font-size: 16px;
+    text-align: center;
+    /*background-color: rgba(8, 54, 8, 0.3);*/
+    background-size: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+#bar_chart {
+    width: 90%;
+    height: 90%
+}

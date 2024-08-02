@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+    <link rel="stylesheet" href="css/layout.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Fondamento&family=Open+Sans&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="js/vega_lite_vis.js"></script>
+    
+</head>
+
+<body>
+    <div class="center">
+        <!--Title-->
+        <div class="pure-g" id="i0">
+            <div class="pure-u-1-5" id="img1">
+                <!--<img src="image/pngaaa.com-1874587.png" /> -->
+            </div>
+            <div class="pure-u-3-5" id="layer0">
+                <span class="line1">Subway</span><br>
+                <span class="line2">in The US of year 2023</span>
+       
+            </div>
+            <div class="pure-u-1-5" id="img2">
+               <img src="image/PngItem_7558757.png" />
+            </div>
+            <div class = "pure-u-1" id="layer0">
+                <p>
+                    <span class="subway">Subway</span>, the iconic fast-food chain known for its fresh and customisable sandwiches, 
+                    is a global sensation that has captured the hearts and taste buds of millions. 
+                    With a history that spans over five decades, <span class="subway">Subway</span> has become a staple in the world of fast, 
+                    healthy, and delicious dining. <br>
+                    This introduction will take you on a delectable journey through the enticing world of <span class="subway">Subway</span>, the extensive network of Subway restaurant locations, their standing in the fast food industry, and their unwavering commitment to providing healthier nutritional choices for their customers.
+                </p>
+            </div>
+        </div>  
+        
+        <!--layer1-->
+        <div class="pure-g>" id ="i1">
+            <div class="pure-u-1" id="layer1">
+                <h2>Locations of Subway Restaurant in The US </h2>
+            </div>
+            <div class="container">
+                <div id="subwaymap2"></div>
+                <p id="p1">
+                    In the United States, <span class="subway">Subway's</span> restaurant density is notably higher in specific states. 
+                    <span class="location">Michigan</span>, <span class="location">Wisconsin</span>, <span class="location">Indiana</span>, <span class="location">Illinois</span>, <span class="location">Ohio</span>, <span class="location">Massachusetts</span>, <span class="location">California</span>, and <span class="location">Maryland </span> stand out as regions with a darker shading,
+                    indicating a greater concentration of <span class="subway">Subway's</span> restaurants. 
+                    This visual insight highlights these states as key hubs for <span class="subway">Subway's</span> enthusiasts and franchise presence.<br>
+        
+                    Conversely, the map also highlights regions in the United States with a lighter shading, indicating a lower concentration of <span class="subway">Subway's</span> restaurants, for example, states like <span class="location">Montana</span>, <span class="location">North Dakota</span>, <span class="location">Alaska</span>, <span class="location">Nevada</span>, and <span class="location">New Mexico</span>.
+                    This variation in distribution sheds light on areas where <span class="subway">Subway</span> has a smaller presence, offering valuable insights for further market expansion and opportunities.
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- layer 2 -->
+        <div class="pure-g>" id="i2">
+            <div class="pure-u-1" id="layer2">
+                <h2>
+                    Number of Subway Restaurants in The US
+                </h2>
+            </div>
+            <div class="container">
+                <div id="restaurants"></div>
+                <p id="p2">
+                    <span class="subway">Subway's</span> success in 2015 was attributed to its <span class="location">aggressive franchising methods</span>, <span class="location">appealing startup costs</span>, and <span class="location">adaptability in menu offerings</span>. Actively seeking franchisees and providing a straightforward process facilitated rapid global expansion. The franchise's affordability and flexible location options attracted many entrepreneurs, distinguishing it from competitors.
+                    Moreover,<span class="subway">Subway's</span> menu modifications, such as introducing fresh vegetables, lean meats, and whole-grain bread, aligned with shifting consumer preferences toward healthier options. This focus on nutritious choices catered to an increasingly health-conscious demographic, contributing significantly to their widespread appeal during that period.<br>
+                    
+                    <span class="subway">Subway's</span> decline post-2015 resulted from <span class="location">intensified competition</span>, stemming from a changing fast-food landscape. Additionally, <span class="location">the scandal involving their former spokesperson</span>, <span class="location">evolving consumer preferences </span>favoring fresher and more diverse options, and  <span class="location">franchisee discontent over operational support</span> and <span class="location">fund management</span> contributed to the downward trajectory. 
+                    <span class="location">Overexpansion </span>led to compromised quality control, damaging their reputation. These factors collectively challenged <span class="subway">Subway's</span> market dominance, underscoring the need for comprehensive strategic reforms to revive its brand image and sustain competitiveness.
+
+
+                </p>
+            </div>
+        </div>
+        
+        <!--layer 3-->
+        <div class="pure-g>" id ="i3">
+            <div class="pure-u-1" id="layer3">
+                <h2>Ranking of Fast Food Restaurant in Revenues</h2>
+            </div>
+            <div class="container3">
+                <div id="company"></div>
+                <p id="p1">
+                    In fast food sales rankings from 2014 to 2023, <span class="subway">Subway</span>  consistently clinched a top-three spot, a remarkable feat in a dynamic industry. 
+                    Although <span class="subway">Subway</span> faced a slight revenue dip in 2020, it swiftly rebounded in the following year, 
+                    reaffirming its position among industry giants like <span class="location"> Chipotle Mexican Grill, McDonald's, Starbucks, Shake Shack </span>and<span class="location"> Wendy's </span>. 
+                    This sustained performance underscores <span class="subway">Subway's </span>  resilience and enduring appeal in the fast food market.
+                </p>
+            </div>
+            
+        </div>
+    
+        <!--layer 4-->
+        <div class="pure-g" id="i4">
+            <div class="pure-u-1">
+                <h2>
+                    Category of foods in Subway
+                </h2>
+            </div>
+
+            <div class ="pure-u-1-2">
+                <div id="category"></div>
+                
+            </div> 
+            <div class ="pure-u-1-2">
+                <div id="menuprice"></div>
+                   
+            </div>
+            <div class="pure-u-1-2">
+                <p id="p4">
+                    In <span class="subway">Subway's</span> food category, <span>sandwiches</span> dominate with the most options.
+                    There is a wide variety of bread available, including Italian, Italian herbs and cheese, 9-grain wheat, and honey oat,
+                    also a broad selection of toppings, which includes fresh veggies, sauces, and condiments, provides a range of tastes and textures to compliment the sandwiches. 
+                    <span class="location">Wraps</span> and <span class="location">salads</span> also offer lighter choices for 
+                    a well-rounded menu to satisfy various preferences.
+                </p>
+
+            </div>
+            <div class="pure-u-1-2">
+                <p id="p41">
+                    Prices for sandwiches on the <span class="subway">Subway's</span> menu typically ranged from $4 to $10. 
+                    From the graph above, we can see that Subway bowls are more expensive than standard sandwiches, due to their bigger ingredient quantities, perceived premium value, greater production and service expenses, and deliberate placement in the market as a premium alternative to normal sandwiches,
+                </p>
+
+            </div>
+             
+        </div>
+    
+        <!--layer 5-->
+        <div class="pure-g>" id ="i5">
+            <div class="pure-u-1" id="layer5">
+                <h2>ACSI scores of Subway</h2>
+            </div>
+            <div class="container3">
+                <div id="acsi"></div>
+                <p id="p5">
+                    The <span class="location">American Customer Satisfaction Index (ACSI)</span> is a metric used to gauge how happy customers are with a company's goods or services. 
+                    With regard to <span class="subway">Subway</span>, the ACSI score of 75 in 2023 represents a moderate degree of customer satisfaction in the United States,
+                    keeping the same standards as the previous two years.
+                </p>
+            </div>
+            
+        </div>
+        
+        <!--layer 6-->
+        <div class="pure-g" id="i5">
+            
+            <div class="pure-u-1" id="layer5">
+                <h2>
+                    Nutrients
+                </h2>
+            </div>
+            <div class ="pure-u-1" id="layer5">
+                <p id="p5">
+                    Despite the fact that <span class="subway">Subway</span> markets itself as a healthier fast-food option
+                    because to its fresh ingredients and customizable sandwiches, its nutritional validity has come under fire in numerous reports. Specific foods like processed meats, sweet bread, and sauces with a lot of sugar or salt have been criticised for their nutritional worth.
+                    So, now let's dive into more details about the nutritional components of the items on the <span class="subway">Subway</span> menu.
+                </p>
+                <div id="nutrients"></div>
+                <p id ="p6">Some <span class="subway">Subway's</span> menu items have raised concerns due to their high calorie and Weight Watchers point values. 
+                    Certain sandwiches and wraps, like the <span class="location">BBQ Rib</span> and <span class="location">Meatball Marina</span> contain notable amounts of calories, fats, and sugars, leading to higher Weight Watchers point scores. This information highlights the importance of making informed choices when selecting from <span class="subway">Subway's</span> menu, especially for individuals monitoring their calorie intake or following a specific dietary plan.
+                    The actual nutritional value of a <span class="subway">Subway's</span> sandwich is mostly determined by the customer's selections, emphasising the significance of making well-informed decisions when considering <span class="subway">Subway</span> as a healthier alternative within the fast-food environment.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
